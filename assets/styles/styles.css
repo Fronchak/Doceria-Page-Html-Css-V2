@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
 html {
     font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -22,8 +28,12 @@ p {
     line-height: 2;
 }
 
+a {
+    text-decoration: none;
+}
+
 .page-container {
-    max-width: 980px;
+    max-width: 1120px;
     margin: 0 auto;
 }
 
@@ -47,7 +57,6 @@ p {
 }
 
 .navbar ul li a {
-    text-decoration: none;
     display: block;
     padding: 20px;
     text-align: center;
@@ -61,7 +70,6 @@ p {
 
 
 .content-container {
-    height: 2500px;
     background-color: #fff;
     padding-left: 200px;
 }
@@ -89,6 +97,122 @@ p {
 
 #section-bem-vindo .mini-banner-container {
     background-image: url(../imgs/banner3.jpg);
-    float:left;
+    float: left;
     margin-right: 30px;
+}
+
+#section-bem-vindo a {
+    background-color: #19A890;
+    padding: 20px 25px;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    width: 150px;
+    transition: 1s;
+    border: 1px solid #19A890;  
+}
+
+#section-bem-vindo a:hover {
+    background-color: #fff;
+    color: #19A890;  
+}
+
+section::after {
+    content: "";
+    clear: both;
+    display: block;
+    margin-bottom: 50px;
+}
+
+#section-sobre-nos .mini-banner-container{
+    background-image: url(../imgs/banner4.jpg);
+    float: right;
+    margin-left: 30px;
+}
+
+.gallery-container {
+    display: grid;
+    gap: 10px;
+}
+
+#section-doces1 .gallery-container {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.gallery-image-container img {
+    width: 100%;
+}
+
+#section-doces1 img {
+    height: 150px;
+}
+
+#section-doces2 .gallery-container {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#section-doces2 img {
+    height: 250px;
+}
+
+#section-doces3 .gallery-container {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#section-doces3 img {
+    height: 200px;
+}
+
+.contact-form {
+    width: 400px;
+}
+
+.contact-form ::placeholder {
+    color: #19A890;
+}
+
+.contact-form input,
+.contact-form textarea {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #19A890;
+    font-size: 16px;
+    color: #19A890;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    border: 1px solid #087B66;
+    background-color: #eee;
+}
+
+.contact-form input[type="submit"] {
+    width: 150px;
+    padding: 10px;
+    border: 1px solid #19A890;
+    background-color: #19A890;
+    color: white;
+    font-size: 16px;
+    transition: 1s;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #fff;
+    color: #19A890;
+}
+
+footer {
+    height: 100px;
+    margin-top: 100px;
+    text-align: center;
+    font-weight: bold;
 }
