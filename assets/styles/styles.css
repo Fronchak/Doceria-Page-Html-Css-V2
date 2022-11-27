@@ -6,7 +6,20 @@ html {
 
 body {
     background-color: #eee;
-    color: #fff;
+    color: #19A890;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+p {
+    line-height: 2;
 }
 
 .page-container {
@@ -15,10 +28,10 @@ body {
 }
 
 .sidebar-container {
-    background-color: #18408A;
+    background-color: #19A890;
     height: 100%;
     position: fixed;
-    width: 250px;
+    width: 200px;
 }
 
 .sidebar-container img {
@@ -28,9 +41,9 @@ body {
 }
 
 .sidebar-container h2 {
-    font-size: 32px;
     text-align: center;
     margin-bottom: 40px;
+    color: white;
 }
 
 .navbar ul li a {
@@ -43,10 +56,39 @@ body {
 }
 
 .navbar ul li a:hover {
-    background-color: #1B5FDE;
+    background-color: #22C3A8;
 }
 
 
 .content-container {
     height: 2500px;
+    background-color: #fff;
+    padding-left: 200px;
+}
+
+.logo-container img {
+    height: 500px;
+    width: 100%;
+}
+
+.main-content-container {
+    margin: 0 auto;
+    padding: 50px 40px 0;
+}
+
+.main-content-container header {
+    margin-bottom: 30px;
+}
+
+.section-content-container .mini-banner-container {
+    width: 300px;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+}
+
+#section-bem-vindo .mini-banner-container {
+    background-image: url(../imgs/banner3.jpg);
+    float:left;
+    margin-right: 30px;
 }
