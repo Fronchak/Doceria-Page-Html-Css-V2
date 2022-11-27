@@ -3,3 +3,50 @@
 html {
     font-family: 'Open Sans', sans-serif;
 }
+
+body {
+    background-color: #eee;
+    color: #fff;
+}
+
+.page-container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.sidebar-container {
+    background-color: #18408A;
+    height: 100%;
+    position: fixed;
+    width: 250px;
+}
+
+.sidebar-container img {
+    width: 70px;
+    display: block;
+    margin: 40px auto;
+}
+
+.sidebar-container h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.navbar ul li a:hover {
+    background-color: #1B5FDE;
+}
+
+
+.content-container {
+    height: 2500px;
+}
